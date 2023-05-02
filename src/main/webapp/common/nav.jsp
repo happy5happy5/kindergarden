@@ -32,7 +32,7 @@
 							<li><a class="dropdown-item"
 								href="<c:url value="/page/notice.jsp"/>">공지사항</a></li>
 							<li><a class="dropdown-item"
-								href="<c:url value="/page/queryAndAnswer.jsp"/>">q&a</a></li>
+								href="<c:url value="/page/queryAndAnswer.jsp"/>">q and a</a></li>
 						</ul></li>
 				</ul>
 				<div class="spacer mx-auto"></div>
