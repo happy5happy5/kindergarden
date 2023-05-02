@@ -19,22 +19,46 @@
 					<li class="nav-item"><a class="nav-link active"
 						aria-current="page" href="<c:url value="/page/introduce.jsp"/>">회사소개</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="<c:url value="/page/curriculum.jsp"/>">커리큘럼</a></li>
-					<li class="nav-item"><a class="nav-link" href="<c:url value="/page/reservation.jsp"/>">예약하기</a></li>
-					<li class="nav-item"><a class="nav-link" href="<c:url value="/page/journal.jsp"/>">알림장</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="<c:url value="/page/curriculum.jsp"/>">커리큘럼</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="<c:url value="/page/reservation.jsp"/>">예약하기</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="<c:url value="/page/journal.jsp"/>">알림장</a></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" role="button"
 						data-bs-toggle="dropdown" aria-expanded="false"> 고객센터 </a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="<c:url value="/page/notice.jsp"/>">공지사항</a></li>
-							<li><a class="dropdown-item" href="<c:url value="/page/queryAndAnswer.jsp"/>">q&a</a></li>
+							<li><a class="dropdown-item"
+								href="<c:url value="/page/notice.jsp"/>">공지사항</a></li>
+							<li><a class="dropdown-item"
+								href="<c:url value="/page/queryAndAnswer.jsp"/>">q&a</a></li>
 						</ul></li>
 				</ul>
 				<div class="spacer mx-auto"></div>
-				<!-- Todo :: 여기서 세션 저장해놓은거 확인해야함 -->
-				<a class="nav-item mr-auto border" type="button"  href="<c:url value="/page/login.jsp"/>">로그인</a>
-				
-				<a class="nav-item mr-auto border" type="button"  href="<c:url value="/page/signin.jsp"/>">회원가입</a>
+
+				<%
+				String info = (String) session.getAttribute("id");
+				%>
+				<%
+				if (info != null) {
+					out.print(info + "님 하잉");
+				%>
+				<a class="nav-item mr-auto border ms-1" type="button"
+					href="<c:url value="/page/mypage.jsp"/>">마이페이지</a> <a
+					class="nav-item mr-auto border" type="button"
+					href="<c:url value="/page/logout_process.jsp"/>">로그아웃</a>
+
+				<%
+				} else {
+				%>
+				<a class="nav-item mr-auto border" type="button"
+					href="<c:url value="/page/login.jsp"/>">로그인</a> <a
+					class="nav-item mr-auto border" type="button"
+					href="<c:url value="/page/signin.jsp"/>">회원가입</a>
+				<%
+				}
+				%>
 			</div>
 		</div>
 	</nav>

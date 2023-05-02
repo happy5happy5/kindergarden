@@ -6,6 +6,8 @@
 
 
 <%
+p
+
 request.setCharacterEncoding("UTF-8");
 String userId = request.getParameter("userId");
 String userPassword = request.getParameter("userPassword");
@@ -31,10 +33,12 @@ if (conn != null)
 	conn.close();
 
 if (temp) {
+	String id = request.getParameter("userId");
+	String password = request.getParameter("userPassword");
+	session.setAttribute("id", id);
 	response.sendRedirect("../index.jsp");
 } else {
-	out.print("로그인 실패");
-	out.print(temp);
+	response.sendRedirect("login.jsp?error=1");
 }
 %>
 
