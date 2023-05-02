@@ -6,8 +6,6 @@
 
 
 <%
-p
-
 request.setCharacterEncoding("UTF-8");
 String userId = request.getParameter("userId");
 String userPassword = request.getParameter("userPassword");
