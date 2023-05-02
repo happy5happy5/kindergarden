@@ -25,8 +25,17 @@
         <div class="col-md-6">
             <div class="card my-5">
                 <div class="card-body">
-                    <h1 class="text-center">로그인</h1>
-                    <form class="form-signin" action="login_process.jsp" method="post">
+                    <h1 class="text-center">회원가입</h1>
+                    <form class="form-signin" action="signup_process.jsp" method="post">
+                    <!-- 
+                    	필요한 작업
+                    	1. userid email phone address password 인풋 태그 다 만들기
+                    	2. 유효성 검사하기
+                    	3. 
+                    	
+                    
+                     -->
+                    
                         <div class="form-group">
                             <label for="inputID">ID</label>
                             <input type="text" class="form-control" id="inputID" placeholder="아이디를 입력하세요." name="userId" required autofocus>
@@ -39,7 +48,7 @@
                     </form>
                     <div class="form-group mt-3">
                         <small><a href="#">Forget?</a></small>
-                        <small><a href="#">login</a></small>
+                        <small><a href="#">Sign up</a></small>
                     </div>
                 </div>
             </div>

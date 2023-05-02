@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="../page/dbconn.jsp"%>
 <div id="fadein" class="position-fixed w-100 h-100 bg-white"
 	style="animation: fadeinall 1s normal 0.3s both"></div>
 <header class="sticky-top">
@@ -37,12 +38,11 @@
 				</ul>
 				<div class="spacer mx-auto"></div>
 
+		
 				<%
-				String info = (String) session.getAttribute("id");
-				%>
-				<%
-				if (info != null) {
-					out.print(info + "님 하잉");
+				String userid = (String) session.getAttribute("id");
+				if (validator.isValidUser(userid)) {
+					out.print(userid + "님 하잉");
 				%>
 				<a class="nav-item mr-auto border ms-1" type="button"
 					href="<c:url value="/page/mypage.jsp"/>">마이페이지</a> <a
@@ -55,11 +55,12 @@
 				<a class="nav-item mr-auto border" type="button"
 					href="<c:url value="/page/login.jsp"/>">로그인</a> <a
 					class="nav-item mr-auto border" type="button"
-					href="<c:url value="/page/signin.jsp"/>">회원가입</a>
+					href="<c:url value="/page/signup.jsp"/>">회원가입</a>
 				<%
 				}
 				%>
 			</div>
 		</div>
 	</nav>
+
 </header>
