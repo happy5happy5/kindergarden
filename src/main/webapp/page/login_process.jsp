@@ -39,5 +39,3 @@ if (temp) {
 	response.sendRedirect("login.jsp?error=1");
 }
 %>
-
-
