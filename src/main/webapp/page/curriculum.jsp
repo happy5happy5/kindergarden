@@ -50,7 +50,7 @@ height: auto;
 <div class="image-container">
   <img src="../resources/2.png" alt="">
   <img src="../resources/3.png" alt="">
-  <img src="../resources/1.png" alt="">
+  <img src="../resources/11.png" alt="">
 </div>
 <div class="container">
   <img src="../resources/뼈다귀.png" alt="" class="image1">
