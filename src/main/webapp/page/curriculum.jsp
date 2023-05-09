@@ -6,57 +6,40 @@
 <style>
 .image-container {
 text-align: center;
-margin-top: -10px;
 margin-left: 150px;
 }
 
 img {
-margin: 40px;
-max-width: 58%;
+margin: 20px;
+max-width: 60%;
 height: auto;
 }
 
-.container {
-  position: relative;
+.reservation {
+max-width: 300px;
 }
 
-.image1 {
-  position: absolute;
-  top: -2090px;
-  left: 515px;
-  width: 100px;
-  height: auto;
+div {
+text-align:center;
 }
-
-.image2 {
-  position: absolute;
-  top: -1310px;
-  left: 515px;
-  width: 100px;
-  height: auto;
-}
-
-.image3 {
-  position: absolute;
-  top: -620px;
-  left: 515px;
-  width: 100px;
-  height: auto;
-}
-
 </style>
 <body>
+
     <%@ include file="/common/nav.jsp" %>
+    
+<div>
+<img src="..//resources/예약.png" alt="" class="reservation">
+</div>
+
 <div class="image-container">
-  <img src="../resources/2.png" alt="">
-  <img src="../resources/3.png" alt="">
-  <img src="../resources/11.png" alt="">
+<a href="https://naver.com" target="_blank">
+  <img src="..//resources/종일반.png" alt=""></a>
+<a href="https://nate.com" target="_blank">  
+  <img src="..//resources/오전반.png" alt=""></a>
+<a href="https://example.com" target="_blank">  
+  <img src="..//resources/오후반.png" alt=""></a>
 </div>
-<div class="container">
-  <img src="../resources/뼈다귀.png" alt="" class="image1">
-  <img src="../resources/하트.png" alt="" class="image2">
-  <img src="../resources/수퍼볼.png" alt="" class="image3">
-</div>
+
 	<%@ include file="/common/footer.jsp" %>
 	<%@ include file="/common/footer-common.jsp" %>
 
