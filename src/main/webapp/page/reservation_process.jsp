@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<%@ include file="/common/header-common.jsp" %>
+<%@ include file="/common/header-common.jsp" %>  
 </head>
 <body>
 	<%@ include file="/common/nav.jsp" %>
