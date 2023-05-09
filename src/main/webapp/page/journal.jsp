@@ -7,6 +7,7 @@
     <%@ include file="/common/nav.jsp" %>
     
     알림장
+    <!-- dk -->
     <!-- 이미지의 상대경로로는 ../resource/snow.jpg 
     			절대경로는 /teamproject/src/main/webapp/resource/snow.jpg
     -->
