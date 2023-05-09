@@ -5,7 +5,7 @@
 <head>
 <html lang="en">
 <meta charset="UTF-8">
-	<link rel="stylesheet" href="../css/reservation_process.css">
+	<link rel="stylesheet" href="../css/reservation_success.css">
 <%@ include file="/common/header-common.jsp" %>
 <body>
     <%@ include file="/common/nav.jsp" %>
