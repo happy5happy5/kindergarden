@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Gothic:wght@400;700&display=swap');
+
+body {
+	margin: 0 auto;
+	background-color: white;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.header {
+	margin: 80px auto;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.header > p {
+	color: #a077ff;
+	font-size: 60px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+.content {
+	display: block;
+	margin: 30px auto;
+	text-align:center;
+	margin-bottom: 50px;
+}
+
+.content img {
+	width: 170px;
+	height: 170px;
+	margin-top: 5px;
+	margin-bottom: 28px;
+}
+
+.content > p {
+	text-align: center;
+	font-size: 24px;
+	letter-spacing: 1px;
+	font-family: 'Do Hyeon', sans-serif;
+	margin-bottom: 17px;
+}
+
+input[type="button"] {
+	background-color: #d6bbff;
+	border: 1px solid #d6bbff;
+	border-radius: 20px;
+	color: white;
+	padding: 7px 17px;
+	font-size: 22px;
+	letter-spacing: 1px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+
