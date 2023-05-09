@@ -1,8 +1,8 @@
-https://github.com/happy5happy5/kindergarden.gitfunction checkForm(){
+function checkForm(){
 	var regExpName = /^[가-힣]+$/;
 	var regExpPhone =/^\d{3}-\d{3,4}-\d{4}$/;
 	var regExpEmail =/^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
-	var regExpDate = /^\d{4}-\d{2}-\d{2}$/; 
+	var regExpDate = /^\d{4}-\d{2}-\d{2}$/;
 	
 	var form = document.form_detail;
 	
@@ -18,7 +18,7 @@ https://github.com/happy5happy5/kindergarden.gitfunction checkForm(){
 	}
 	
 	if (!regExpPhone.test(phone)) {
-		alert("연락처를 형식에 맞게 입력해주세요.");  
+		alert("연락처를 형식에 맞게 입력해주세요.");
 		form.phone.select();
 		return;
 	}
@@ -38,4 +38,3 @@ https://github.com/happy5happy5/kindergarden.gitfunction checkForm(){
 	
 	form.action = "reservation_process.jsp";
 }
-	
