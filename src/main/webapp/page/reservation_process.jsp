@@ -4,7 +4,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<link rel="stylesheet" href="../css/reservation_detail.css">
 <%@ include file="/common/header-common.jsp" %>
 </head>
 <body>
