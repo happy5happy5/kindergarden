@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
+<head>  
 <html lang="en">
 <meta charset="UTF-8">
 	<link rel="stylesheet" href="../css/reservation_success.css">
