@@ -11,7 +11,7 @@
             <p class="title">예약 절차</p>
         </div>
         <div class="process">
-			<ul>
+			<ul> <!-- 실험 -->
 				<li class="list1">
 					<div class="process_list">
 						<p class="process_circle"></p>
