@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="../css/reservation_detail.css">
 <script type="text/javascript" src="../js/reservation_check.js"></script>
 <%@ include file="/common/header-common.jsp" %>
-
 </head>
 <body>
 	 <%@ include file="/common/nav.jsp" %>
@@ -29,9 +28,9 @@
 		    <label for="curriculum" class="form-label">커리큘럼 :</label><br>
 		    <select class="form-select" name="curriculum" style="width: 600px;" required>
 		    	<option value="" selected disabled hidden>-- Select one --</option>
-		    	<option value="curriculum" selected>오전반</option>
+		    	<option value="curriculum">오전반</option>
 		        <option value="curriculum">오후반</option>
-		        <option value="curriculum">종일반</option>
+		        <option value="curriculum" selected>종일반</option>
 		    </select><br>
 		    
 		    <label for="message" class="form-label">남기실 말씀 :</label><br>
