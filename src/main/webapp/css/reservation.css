@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@400;700&display=swap');
+
+.container{
+	 width: 1400px;
+	 margin: 0 auto;
+	 margin-top: 20px; 
+	 font-family: 'Nanum Gothic', sans-serif;
+	 font-weight: 1000;
+}
+
+.container .heading{
+    font-size: 38px;
+    font-weight: 600;
+    color: #21b7a9;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #21b7a9;
+    margin-left: 210px;
+    margin-bottom: 50px;
+    letter-spacing: 1.5px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+.process {
+	margin-left: 80px;
+	margin-bottom: 50px;
+}
+
+
+.process ul{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.process ul li{
+    width: calc((100% - 160px)/5);
+    margin-right: 80px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.process_list {
+    margin: 0 auto;
+}
+
+.process_circle{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border: solid 3px  #21b7a9;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.process ul li::before{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url('../resources/arrow.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -95px;
+    top: 17%;
+    margin-right:100px;
+}
+
+.process ul li:first-child::before {
+    display: none;
+}
+
+.process_circle::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.list1 .process_circle::before{
+    background: url('../resources/read.png') no-repeat;
+    background-size : cover;
+}
+
+.list2 .process_circle::before{
+    background: url('../resources/write.png') no-repeat;
+    background-size : cover;
+}
+
+.list3 .process_circle::before{
+    background: url('../resources/check.png') no-repeat;
+    background-size : cover;
+}
+
+.process_title{
+    font-size: 26px;
+    padding-top: 35px;
+    color:  #21b7a9;
+    letter-spacing: 1.5px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+.process_txt{
+    font-size: 18px;
+    font-weight: 530;
+    padding-top: 1.5px;
+    color: #333;
+    word-break: keep-all;
+    line-height: 26px;
+}
+
+.process_txt span{
+    font-size: 17px;
+    font-family: var(--font-proxima);
+
+}
+
+.go_curriculum {
+    width: 1400px;
+ 	margin-left: 50px;
+ 	display: block;
+ 	margin-left: 200px;
+}
+
+#am, #pm, #ampm {
+	display: flex; 
+
+} 
+
+.content {
+	font-size: 19px;
+    color: #555;
+	border: 2px solid  #888;
+	border-radius: 10px;
+	margin: 40px;
+	padding: 25px;
+	width: 700px;
+	text-align: left;
+}
+
+input[type="button"] {
+	margin-top: 100px;
+	height: 60px;
+	padding: 10px;
+	background-color: #21b7a9;
+	color: white;
+	font-size: 17px;
+	font-weight: 550;
+	border: 1px solid #21b7a9;
+	border-radius: 20px;
+}
