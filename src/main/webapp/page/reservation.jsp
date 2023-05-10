@@ -4,6 +4,34 @@
 <html lang="en">
 		<link rel="stylesheet" href="../css/reservation.css">
 <%@ include file="/common/header-common.jsp" %>
+<style>
+.process ul li::before{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url('../resources/arrow.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -95px;
+    top: 17%;
+    margin-right:100px;
+}
+.list1 .process_circle::before{
+    background: url('../resources/read.png') no-repeat;
+    background-size : cover;
+}
+
+.list2 .process_circle::before{
+    background: url('../resources/write.png') no-repeat;
+    background-size : cover;
+}
+
+.list3 .process_circle::before{
+    background: url('../resources/check.png') no-repeat;
+    background-size : cover;
+}
+</style>
 <body style="background-color: white">
     <%@ include file="/common/nav.jsp" %>
 	<div class="container">
