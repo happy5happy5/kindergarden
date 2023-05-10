@@ -13,7 +13,7 @@
 		<p>예약이 완료되었습니다</p>
 	</div>
 	<div class="content">
-		<img class="my_img" src="../resource/reservation.png" >
+		<img class="my_img" src="../resources/reservation.png" >
 		<p>마이페이지에서 예약 내역을 확인해보세요!</p>
 		<input type="button" onclick="window.location.href='mypage.jsp'" value="마이페이지" style="margin-bottom:100px;">
 	</div>
