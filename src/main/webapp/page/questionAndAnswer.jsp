@@ -3,27 +3,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <%@ include file="/common/header-common.jsp"%>
+
 <body>
 	<%@ include file="/common/nav.jsp"%>
 	<div class="container">
-		<!-- board-title area -->
-		<div id="board-title">공지사항</div>
-
-		<!-- board-menu area -->
-		<div id="board-menu">
-			<ul class="board-menu-list">
-				<li><a href="notice.jsp" id="boardmenu-notice">공지사항</a></li>
-				<li><a href="questionAndAnswer.jsp" id="boardmenu-qna">Q &
-						A</a></li>
-			</ul>
-		</div>
+		<%@ include file="board-top-qna.jsp"%>
 
 		<!-- board-search area -->
 		<div id="board-search">
 			<div class="search-window">
 				<form action="">
 					<div class="search-wrap">
-						<label for="search" class="blind">공지사항 내용 검색</label> <select
+						<label for="search" class="blind">Q&A 내용 검색</label> <select
 							id="submitoption">
 							<option value="title">제목</option>
 							<option value="writer">작성자</option>
@@ -45,7 +36,6 @@
 
 		<!-- board-list area -->
 		<div id="board-list">
-
 			<table class="board-table">
 				<thead>
 					<tr>
@@ -65,25 +55,32 @@
 						<td>126</td>
 					</tr>
 					<tr>
+						<td>-</td>
+						<th><a href="#" class="board-name">[공지사항]QnA 이용 방법</a></th>
+						<td>아무개</td>
+						<td>2017.07.13</td>
+						<td>36</td>
+					</tr>
+					<tr>
 						<td>3</td>
 						<th><a href="#" class="board-name">글 제목입니다.</a></th>
 						<td>홍길동</td>
 						<td>2017.06.15</td>
-						<td>0</td>
+						<td>10</td>
 					</tr>
 					<tr>
 						<td>2</td>
 						<th><a href="#" class="board-name">글 제목입니다.</a></th>
 						<td>홍길동</td>
 						<td>2017.06.15</td>
-						<td>1</td>
+						<td>15</td>
 					</tr>
 					<tr>
 						<td>1(글 넘버)</td>
 						<th><a href="#" class="board-name">글 제목입니다.</a></th>
-						<td>홍길동</td>
+						<td>임꺽정</td>
 						<td>2017.06.15</td>
-						<td>13</td>
+						<td>0</td>
 					</tr>
 				</tbody>
 			</table>
@@ -96,8 +93,12 @@
 					href="#" class="num">5</a> <a href="#" class="bt next">></a> <a
 					href="#" class="bt last">>></a>
 			</div>
+			<div class="bt_wrap">
+				<a href="gnaWrite.jsp" class="on">글쓰기</a>
+			</div>
 		</div>
 	</div>
+
 	<%@ include file="/common/footer.jsp"%>
 	<%@ include file="/common/footer-common.jsp"%>
 
