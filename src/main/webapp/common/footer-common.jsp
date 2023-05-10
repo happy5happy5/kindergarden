@@ -2,9 +2,11 @@
     pageEncoding="UTF-8"%>
 
     <script type="text/javascript">
-      window.onload = function () {
-        setTimeout(function () {
-          document.getElementById("fadein").remove();
-        }, 1000);
-      };
+      
+  	  let temp=document.querySelector("#error-message");
+    	  if(temp){
+      			window.setTimeout(function() {
+    		  	temp.style.display="none";
+      }, 1000);
+    	  }
     </script>
