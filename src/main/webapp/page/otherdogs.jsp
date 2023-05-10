@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*"%>
-<%@ page import="diary.OtherdogsList" %>
+<%@ page import="env.OtherdogsList" %>
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="../css/otherdogs.css">

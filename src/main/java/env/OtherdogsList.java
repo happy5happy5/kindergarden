@@ -1,9 +1,9 @@
-package diary;
+package env;
 
 public class OtherdogsList {
 
-	String[] imgList = {"../resource/dog0.jpg", "../resource/dog1.jpg", "../resource/dog2.jpg","../resource/dog3.jpg", "../resource/dog4.jpg","../resource/dog5.jpg",
-						"../resource/dog6.jpg", "../resource/dog7.jpg", "../resource/dog8.jpg", "../resource/dog9.jpg", "../resource/dog10.jpg", "../resource/dog11.jpg"}; 
+	String[] imgList = {"../resources/dog0.jpg", "../resources/dog1.jpg", "../resources/dog2.jpg","../resources/dog3.jpg", "../resources/dog4.jpg","../resources/dog5.jpg",
+						"../resources/dog6.jpg", "../resources/dog7.jpg", "../resources/dog8.jpg", "../resources/dog9.jpg", "../resources/dog10.jpg", "../resources/dog11.jpg"}; 
 	
 	String[] titleList = {"생일 파티를 했어요!", "방해꾼", "찰칵!", "낮잠이 좋아", "즐거운 산책시간", "쓰담쓰담", "어질리티 훈련",  
 						  "챱챱 물 마시기", "가족의 탄생",  "얌전히 기다리기!", "비온 뒤 맑음!", "꼼짝마!"};
