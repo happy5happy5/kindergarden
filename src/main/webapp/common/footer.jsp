@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <footer class="bg-light ">
+        <footer class="bg-light " style="<%="position:absolute;bottom:0;width:100%;"%>">
       <small
         >©
         <script>
