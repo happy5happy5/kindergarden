@@ -70,7 +70,7 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: url('../resource/arrow.png') no-repeat;
+    background: url('../resources/arrow.png') no-repeat;
     background-size: cover;
     position: absolute;
     left: -95px;
@@ -91,17 +91,17 @@
 }
 
 .list1 .process_circle::before{
-    background: url('../resource/read.png') no-repeat;
+    background: url('../resources/read.png') no-repeat;
     background-size : cover;
 }
 
 .list2 .process_circle::before{
-    background: url('../resource/write.png') no-repeat;
+    background: url('../resources/write.png') no-repeat;
     background-size : cover;
 }
 
 .list3 .process_circle::before{
-    background: url('../resource/check.png') no-repeat;
+    background: url('../resources/check.png') no-repeat;
     background-size : cover;
 }
 
