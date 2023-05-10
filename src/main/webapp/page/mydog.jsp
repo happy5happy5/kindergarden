@@ -45,7 +45,7 @@
 		            <p id="mainTitle">제목: 생일 파티를 했어요!
 		        </div>
 		        <div class="diaryImage">
-		            <img src="../resource/dog0.jpg" id="today-pic" style="transition: all ease-in 0.2s;">
+		            <img src="../resources/dog0.jpg" id="today-pic" style="transition: all ease-in 0.2s;">
 		        </div>
 		        <div class="textBox">
 		            <p id="innerTxt">오늘 생일을 맞은 코코!<br>동생 껌딱지 모모와 함께 같이 사진 찍었어요! 맛있는 간식도 먹고 즐거웠답니다~
