@@ -1,4 +1,3 @@
-<%@page import="java.io.FileInputStream"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -6,26 +5,17 @@
 <%@ include file="/common/header-common.jsp"%>
 <body>
 	<%@ include file="/common/nav.jsp"%>
-
-	<!-- 기본적인 제출 폼입니다. -->
-	<!-- 
-		아직 확인하는 페이지가 안만들어져있으니 실제로 데이터가 잘 가는지는 
-		직접 간단하게 만들어서 확인하셔야합니다 
-		css적인 꾸미기가 많이 필요합니다 
-	-->
-<%-- 	루트경로 확인
-	<%
-    ServletContext context = getServletContext();
-    String rootPath = context.getRealPath("/");
-    out.println("Root path: " + rootPath); 
-	%> 
---%>
-<div class="container-fluid" style="background: linear-gradient(to bottom right, #FFDAB9 0%, #FFA07A 100%);">
+<div class="login-container container-fluid" style="background: linear-gradient(to bottom right, #FFDAB9 0%, #FFA07A 100%);">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card my-5">
                 <div class="card-body">
                     <h1 class="text-center">로그인</h1>
+                    <% if(request.getParameter("inValidError") != null){ %>
+                    <div class="alert alert-danger mt-3" role="alert">
+                        <strong>오류!</strong> <%= session.getAttribute("errorMessage")%>
+                    </div>
+                    <% } %>
                     <form class="form-signin" action="login_process.jsp" method="post">
                         <div class="form-group">
                             <label for="inputID">ID</label>
@@ -39,14 +29,13 @@
                     </form>
                     <div class="form-group mt-3">
                         <small><a href="#">Forget?</a></small>
-                        <small><a href="#">login</a></small>
+                        <small><a href="signup.jsp">SignUp?</a></small>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 
 	<%@ include file="/common/footer.jsp"%>
 	<%@ include file="/common/footer-common.jsp"%>
